@@ -19,7 +19,8 @@ export default function Sidebar() {
           <h1 className="name" title="Muhammad Farhan">
             Muhammad Farhan
           </h1>
-          <p className="title">Tech Student</p>
+          {/* Diperbarui: Role/Pekerjaan */}
+          <p className="title">Tech Enthusiast</p>
         </div>
 
         <button
@@ -43,6 +44,7 @@ export default function Sidebar() {
               <a
                 href="mailto:farhan.muh1305@gmail.com"
                 className="contact-link"
+                title="farhan.muh1305@gmail.com"
               >
                 farhan.muh1305@gmail.com
               </a>
@@ -65,7 +67,8 @@ export default function Sidebar() {
             </div>
             <div className="contact-info">
               <p className="contact-title">Birthday</p>
-              <time dateTime="1982-06-23">June 23, 1982</time>
+              {/* Diperbarui: Tanggal Lahir */}
+              <time dateTime="2003-05-13">May 13, 2003</time>
             </div>
           </li>
           <li className="contact-item">
@@ -74,7 +77,8 @@ export default function Sidebar() {
             </div>
             <div className="contact-info">
               <p className="contact-title">Location</p>
-              <address>Sacramento, California, USA</address>
+              {/* Diperbarui: Lokasi */}
+              <address>Depok, West Java, Indonesia</address>
             </div>
           </li>
         </ul>
@@ -82,18 +86,34 @@ export default function Sidebar() {
         <div className="separator"></div>
 
         <ul className="social-list">
+          {/* Diperbarui: Ikon Media Sosial (GitHub, LinkedIn, Instagram) */}
           <li className="social-item">
-            <a href="#" className="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a
+              href="https://github.com/mhdfrhn13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a
+              href="https://linkedin.com/in/mhdfrhn13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a
+              href="https://instagram.com/mhd.frrhnnn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>

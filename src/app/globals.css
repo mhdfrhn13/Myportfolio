@@ -2002,9 +2002,9 @@ textarea.form-input::-webkit-resizer {
   }
 
   .contact-info :is(.contact-link) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-all; /* Memastikan karakter panjang seperti email bisa dipatahkan */
   }
 
   .contact-info :is(.contact-link, time, address) {

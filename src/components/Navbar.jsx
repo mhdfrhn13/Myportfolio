@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: "About", path: "/" },
     { name: "Resume", path: "/resume" },
     { name: "Portfolio", path: "/portfolio" },
-    { name: "Blog", path: "/blog" },
+    { name: "Achievement", path: "/achievement" }, // Menu Blog diubah jadi Achievement
     { name: "Contact", path: "/contact" },
   ];
 

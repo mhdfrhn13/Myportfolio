@@ -1,4 +1,20 @@
 export default function Resume() {
+  // Daftar keahlian Anda (bisa ditambah/dikurangi sesuai kebutuhan)
+  const skills = [
+    "Python",
+    "Data Analysis",
+    "Next.js",
+    "React",
+    "Power BI",
+    "Microsoft Excel",
+    "Tailwind CSS",
+    "Supabase",
+    "Scikit-learn",
+    "Pandas",
+    "Canva",
+    "Web Development",
+  ];
+
   return (
     <article className="resume active">
       <header>
@@ -16,127 +32,88 @@ export default function Resume() {
 
         <ol className="timeline-list">
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              University school of the arts
-            </h4>
-            <span>2007 — 2008</span>
+            <h4 className="h4 timeline-item-title">Universitas Riau</h4>
+            <span>2021 — 2025</span>
             <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              deleniti atque corrupti, quos dolores et quas molestias exceptur.
+              Bachelor of Information Systems. <br />
+              Relevant Coursework: Data Analysis, Web Development. <br />
+              Thesis: "Evaluasi Algoritma Machine Learning untuk Prediksi
+              Hotspot Kebakaran Hutan dan Lahan di Provinsi Riau" using NASA
+              MODIS satellite data.
             </p>
           </li>
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">New york academy of art</h4>
-            <span>2006 — 2007</span>
+            <h4 className="h4 timeline-item-title">SMA N 1 Sumatera Barat</h4>
+            <span>2018 — 2021</span>
             <p className="timeline-text">
-              Ratione voluptatem sequi nesciunt, facere quisquams facere menda
-              ossimus, omnis voluptas assumenda est omnis..
-            </p>
-          </li>
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">
-              High school of art and design
-            </h4>
-            <span>2002 — 2004</span>
-            <p className="timeline-text">
-              Duis aute irure dolor in reprehenderit in voluptate, quila
-              voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+              High School Diploma (Mathematics and Natural Sciences).
             </p>
           </li>
         </ol>
       </section>
 
-      {/* Bagian Pengalaman Kerja */}
+      {/* Bagian Pengalaman Kerja (Dummy Sementara) */}
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
+            <ion-icon name="briefcase-outline"></ion-icon>
           </div>
           <h3 className="h3">Experience</h3>
         </div>
 
         <ol className="timeline-list">
           <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Creative director</h4>
-            <span>2015 — Present</span>
+            <h4 className="h4 timeline-item-title">Job Title (Dummy)</h4>
+            <span>2025 — Present</span>
+            <p className="timeline-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+          </li>
+          <li className="timeline-item">
+            <h4 className="h4 timeline-item-title">Previous Role (Dummy)</h4>
+            <span>2023 — 2025</span>
             <p className="timeline-text">
               Nemo enim ipsam voluptatem blanditiis praesentium voluptum
-              deleniti atque corrupti, quos dolores et qvuas molestias exceptur.
-            </p>
-          </li>
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Art director</h4>
-            <span>2013 — 2015</span>
-            <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              deleniti atque corrupti, quos dolores et quas molestias exceptur.
-            </p>
-          </li>
-          <li className="timeline-item">
-            <h4 className="h4 timeline-item-title">Web designer</h4>
-            <span>2010 — 2013</span>
-            <p className="timeline-text">
-              Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-              deleniti atque corrupti, quos dolores et quas molestias exceptur.
+              deleniti atque corrupti, quos dolores et quas molestias excepturi
+              sint occaecati cupiditate non provident.
             </p>
           </li>
         </ol>
       </section>
 
-      {/* Bagian Keahlian (Skills) */}
+      {/* Bagian Keahlian (Skills) - Desain Tag/Badge */}
       <section className="skill">
-        <h3 className="h3 skills-title">My skills</h3>
+        <h3 className="h3 skills-title">My Skills</h3>
 
-        <ul className="skills-list content-card">
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">Web design</h5>
-              <data value="80">80%</data>
-            </div>
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "80%" }}
-              ></div>
-            </div>
-          </li>
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">Graphic design</h5>
-              <data value="70">70%</data>
-            </div>
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "70%" }}
-              ></div>
-            </div>
-          </li>
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">Branding</h5>
-              <data value="90">90%</data>
-            </div>
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "90%" }}
-              ></div>
-            </div>
-          </li>
-          <li className="skills-item">
-            <div className="title-wrapper">
-              <h5 className="h5">WordPress</h5>
-              <data value="50">50%</data>
-            </div>
-            <div className="skill-progress-bg">
-              <div
-                className="skill-progress-fill"
-                style={{ width: "50%" }}
-              ></div>
-            </div>
-          </li>
-        </ul>
+        <div
+          className="content-card"
+          style={{
+            padding: "25px",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "12px",
+          }}
+        >
+          {skills.map((skill, index) => (
+            <span
+              key={index}
+              style={{
+                background: "var(--bg-gradient-onyx)",
+                color: "var(--white-2)",
+                padding: "8px 18px",
+                borderRadius: "12px",
+                fontSize: "var(--fs-6)",
+                fontWeight: "var(--fw-400)",
+                boxShadow: "var(--shadow-1)",
+                border: "1px solid var(--jet)",
+              }}
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </section>
     </article>
   );

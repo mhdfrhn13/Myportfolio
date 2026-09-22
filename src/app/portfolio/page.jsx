@@ -3,33 +3,22 @@ import { useState } from "react";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("All");
-  const categories = ["All", "Web design", "Applications", "Web development"];
+
+  // Kategori disesuaikan dengan fokus keahlian Anda
+  const categories = ["All", "Web Development", "Data Analysis"];
 
   const projects = [
     {
-      title: "Finance",
-      category: "Web development",
-      img: "/assets/images/project-1.jpg",
+      title: "FnS Tour and Travel",
+      category: "Web Development",
+      img: "/assets/images/fns-tour.jpg", // Pastikan file gambar ini ada di folder public/assets/images
+      link: "https://fnstourtravel.com", // Mengarah langsung ke website live Anda
     },
     {
-      title: "Orizon",
-      category: "Web development",
-      img: "/assets/images/project-2.png",
-    },
-    {
-      title: "Fundo",
-      category: "Web design",
-      img: "/assets/images/project-3.jpg",
-    },
-    {
-      title: "Brawlhalla",
-      category: "Applications",
-      img: "/assets/images/project-4.png",
-    },
-    {
-      title: "DSM.",
-      category: "Web design",
-      img: "/assets/images/project-5.png",
+      title: "Forest Fire Hotspot Prediction",
+      category: "Data Analysis",
+      img: "/assets/images/skripsi-hotspot.jpg", // Gunakan screenshot grafik visualisasi data atau cover skripsi
+      link: "#", // Ganti dengan link repositori GitHub jika ada
     },
   ];
 
@@ -63,7 +52,12 @@ export default function Portfolio() {
         <ul className="project-list">
           {filteredProjects.map((project, i) => (
             <li className="project-item active" key={i}>
-              <a href="#">
+              {/* Menambahkan target="_blank" agar website terbuka di tab baru */}
+              <a
+                href={project.link}
+                target={project.link !== "#" ? "_blank" : "_self"}
+                rel="noopener noreferrer"
+              >
                 <figure className="project-img">
                   <div className="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>

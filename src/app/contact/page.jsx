@@ -2,7 +2,6 @@
 import { useState } from "react";
 
 export default function Contact() {
-  // State untuk menangani nilai form
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
@@ -23,7 +22,7 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulasi pengiriman data
+    // Simulasi pengiriman data (Dummy)
     setTimeout(() => {
       alert(`Terima kasih ${formData.fullname}, pesan Anda telah terkirim!`);
       setFormData({ fullname: "", email: "", message: "" });
@@ -31,7 +30,7 @@ export default function Contact() {
     }, 1000);
   };
 
-  // Logika sederhana untuk mengecek apakah form lengkap (validasi dasar)
+  // Validasi dasar agar tombol aktif jika semua field terisi
   const isFormValid =
     formData.fullname.trim() !== "" &&
     formData.email.trim() !== "" &&
@@ -45,10 +44,11 @@ export default function Contact() {
 
       <section className="mapbox">
         <figure>
+          {/* Tautan Embed Google Maps telah diubah ke area Depok */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-            width="400"
-            height="300"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126899.51608678082!2d106.7486884897258!3d-6.40248478426053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebe4ec410f9b%3A0x6a117b4474bf8206!2sSukmajaya%2C%20Depok%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
+            width="100%"
+            height="100%"
             loading="lazy"
             style={{ border: 0 }}
             allowFullScreen=""
